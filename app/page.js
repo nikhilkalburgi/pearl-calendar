@@ -26,7 +26,6 @@ export default function Home() {
           <div style={{width: "600px"}}>
 
           {(!repeatType)? (null) : 
-
             <Calendar repeatType={repeatType} startDate={startDate} endDate={endDate} />
           }
           </div>

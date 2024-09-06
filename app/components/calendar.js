@@ -92,7 +92,6 @@ export default function MultiDatePicker(props) {
 
   // Use effect to select dates on component mount
   React.useEffect(() => {
-    console.log(startDate, props.repeatType)
     if(props.repeatType === "Daily") {       
         const dateRange = generateDateRange(startDate, endDate, 1, "day");
         setSelectedDays(dateRange);
@@ -141,7 +140,6 @@ export default function MultiDatePicker(props) {
   const handleCounterChange =(event)=>{
     setCounter(event.target.value);
   }
-
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
